@@ -3,49 +3,33 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  //runApp(const MyApp());
+  runApp(MyApp(title: 'Aplicativo Olá Mundo!'));
 
-  runApp(
-    MaterialApp(
+  //runApp();
+}
+
+class MyApp extends StatelessWidget {
+  final String title;
+  const MyApp({Key? key, this.title = ''}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
         // ignore: prefer_const_constructors
         home: Scaffold(
             appBar: AppBar(
-              title: Text('Aplicativo Olá Mundo!'),
+              title: Text(this.title),
             ),
             body: Center(
               child: Text(
                 'Olá Mundo!!',
                 style: TextStyle(fontSize: 50, color: Colors.black),
               ),
-            ))),
-  );
-}
+            )));
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*class MyApp extends StatelessWidget {
+/*
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // This widget is the root of your application.
@@ -54,7 +38,6 @@ void main() {
     return MaterialApp(
       title: 'Flutter Demo!!',
       theme: ThemeData(
-        
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page!!'),
@@ -64,8 +47,6 @@ void main() {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
-
-  
 
   final String title;
 
@@ -78,14 +59,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-    
       _counter++;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-   
     return Scaffold(
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
@@ -96,7 +75,6 @@ class _MyHomePageState extends State<MyHomePage> {
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
-         
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
@@ -115,5 +93,5 @@ class _MyHomePageState extends State<MyHomePage> {
         child: const Icon(Icons.add),
       ),
     );
-  }
-}*/
+  }*/
+}
