@@ -7,12 +7,17 @@ void main() {
 
   runApp(
     MaterialApp(
-      // ignore: prefer_const_constructors
-      home: Center(
-        child: Text('Olá Mundo!!', 
-          style: TextStyle(fontSize: 50, color: Colors.white),),
-      ),
-    ),
+        // ignore: prefer_const_constructors
+        home: Scaffold(
+            appBar: AppBar(
+              title: Text('Aplicativo Olá Mundo!'),
+            ),
+            body: Center(
+              child: Text(
+                'Olá Mundo!!',
+                style: TextStyle(fontSize: 50, color: Colors.black),
+              ),
+            ))),
   );
 }
 
