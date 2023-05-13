@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MyApp(title: 'Aplicativo Olá Mundo!'));
 
-<<<<<<< Updated upstream
+
   //runApp();
-=======
+
   runApp(
     MaterialApp(
       // ignore: prefer_const_constructors
@@ -32,7 +32,7 @@ void main() {
     ),
     ),
   );
->>>>>>> Stashed changes
+
 }
 
 class MyApp extends StatelessWidget {
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
         // ignore: prefer_const_constructors
         home: Scaffold(
             appBar: AppBar(
-              title: Text(this.title),
+              title: Text(title),
             ),
             body: Center(
               child: Text(
