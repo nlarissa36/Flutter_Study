@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
             ),
             body: Center(
               child: Text(
-                'Olá Mundo Larissa vieira!!',
+                'Olá Mundo!!',
                 style: TextStyle(fontSize: 50, color: Colors.black),
               ),
             )));
